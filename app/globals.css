@@ -1,26 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  /* This replaces tailwind.config.js in version 4 */
+  --color-bizon-orange: #f97316;
+  --color-bizon-blue: #2563eb;
+  --color-bizon-dark: #111827;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  background-color: white;
+  color: #111827;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* In v4, if @apply fails inside :root, use it inside the body tag */
+  @apply bg-white antialiased;
 }
