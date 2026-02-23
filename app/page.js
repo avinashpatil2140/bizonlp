@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Head from "next/head";
 import { useState } from "react";
 
 // Animation definitions (accessible to all components)
@@ -30,49 +29,49 @@ export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   return(
-    <>
-      <Head>
-        <title>Responsive Website Designers in Pune | Business Website Designers Pune</title>
-        <meta name="description"
-        content="BizOn Digital offers responsive website design Pune, SEO, PPC and digital marketing solutions. Expert business website designers Pune helping brands grow online."/>
-      </Head>
-
-      <main className="bg-white text-gray-900">
+    <main className="bg-white text-gray-900">
 
         {/* NAVBAR */}
         <nav className="sticky top-0 bg-white/80 backdrop-blur-lg border-b z-50 shadow-sm">
           <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
-            <a href="https://bizondigital.com/" className="hover:opacity-80 transition">
-              <h2 className="font-black text-2xl text-[#F97316]">BizOn Digital</h2>
+            <a href="/" className="hover:opacity-80 transition flex items-center gap-3">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#F97316] to-[#2563EB] rounded-lg flex items-center justify-center font-bold text-white text-xl">
+                B
+              </div>
+              <div>
+                <h2 className="font-black text-xl text-[#F97316] leading-tight">BIZON</h2>
+                <h3 className="font-bold text-xs text-[#2563EB] leading-tight">DIGITAL</h3>
+              </div>
             </a>
             <div className="hidden md:flex gap-8 text-sm font-semibold">
-              <a href="https://bizondigital.com/" className="hover:text-[#F97316] transition">Home</a>
-              <a href="https://bizondigital.com/services" className="hover:text-[#F97316] transition">Services</a>
+              <a href="/#home" className="hover:text-[#F97316] transition">Home</a>
+              <a href="/#services" className="hover:text-[#F97316] transition">Services</a>
               <a href="https://bizondigital.com/about" className="hover:text-[#F97316] transition">About</a>
               <a href="https://bizondigital.com/blog" className="hover:text-[#F97316] transition">Blog</a>
+              <a href="https://bizondigital.com/contact" className="hover:text-[#F97316] transition">Contact</a>
             </div>
             <a href="https://bizondigital.com/contact"
                className="bg-[#F97316] text-white px-6 py-2 rounded-full font-bold hover:bg-orange-700 transition shadow-md">
-               Get Quotes
+               Get Free Quote
             </a>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-orange-50 via-white to-orange-100 py-32 px-6 text-center">
+        <section id="home" className="bg-gradient-to-br from-orange-50 via-white to-orange-100 py-32 px-6 text-center">
           <motion.div variants={fadeUp} initial="hidden" animate="visible"
             className="max-w-5xl mx-auto">
 
             <motion.h1 className="text-4xl md:text-7xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-800 to-[#F97316]"
               variants={fadeUp}>
-              Responsive Website Design Pune That Drives Real Business Growth
+              E-Commerce Website Development Pune That Drives Real Sales
             </motion.h1>
 
             <motion.p className="mt-8 text-lg text-gray-600"
               variants={fadeUp}>
-              BizOn Digital is a leading team of business website designers Pune helping brands
-              build high-performance websites, increase search rankings and convert visitors into customers
-              using data-driven digital marketing strategies.
+              Expert e-commerce website development in Pune specializing in online store setup, payment integration,
+              and sales optimization. We build high-converting e-commerce websites that increase sales, improve customer experience,
+              and scale your online business using proven, data-driven strategies.
             </motion.p>
 
             <motion.div className="flex flex-col md:flex-row gap-4 justify-center mt-10"
@@ -86,18 +85,18 @@ export default function Home() {
               <motion.a href="https://bizondigital.com/services"
                  className="border-2 border-[#F97316] text-[#F97316] px-10 py-4 rounded-full font-bold hover:bg-[#F97316] hover:text-white transition text-center"
                  variants={scaleUp}>
-                Explore Services
+                Explore Our Services
               </motion.a>
 
-              <motion.a href="https://wa.me/917030323838?text=Hello!%20I%27m%20interested%20in%20your%20digital%20marketing%20services."
+              <motion.a href="https://wa.me/917030323838?text=Hello!%20I%27m%20interested%20in%20business%20website%20design%20services%20in%20Pune."
                 className="bg-gray-900 text-white px-10 py-4 rounded-full font-bold hover:bg-gray-800 hover:shadow-xl transition transform hover:-translate-y-1 text-center"
                 variants={scaleUp}>
-                📞 Schedule Call
+                📞 Schedule Free Call
               </motion.a>
             </motion.div>
 
             <motion.p className="mt-6 text-sm text-gray-500" variants={fadeUp}>
-              ⭐ 4.9/5 Average Rating | 25+ Winning Awards | 120+ Projects Delivered
+              ⭐ 4.9/5 Average Rating | 25+ Awards | 120+ Successful Projects | 8+ Years Experience
             </motion.p>
           </motion.div>
         </section>
@@ -107,22 +106,22 @@ export default function Home() {
           <div className="max-w-7xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-6">
-                Why Businesses Choose BizOn Digital
+                Why Choose BizOn Digital - E-Commerce Website Development Pune?
               </h2>
 
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Our team focuses on performance-driven strategies combining responsive website design Pune,
-                advanced SEO, paid advertising and conversion optimization to deliver measurable ROI.
+                As Pune's leading e-commerce website development experts, we combine stunning design with proven sales strategies
+                to build online stores that convert. Our methodology ensures seamless checkout, secure payments, and maximized revenue.
               </p>
             </motion.div>
 
             <motion.div className="grid md:grid-cols-3 gap-8 mt-14" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <Feature title="🎯 Strategic Expertise"
-              desc="Deep understanding of modern digital marketing and user behavior tailored to your business."/>
-              <Feature title="📈 Proven Results"
-              desc="Campaigns designed to increase traffic, leads and revenue with measurable ROI."/>
-              <Feature title="💼 Client Focused Approach"
-              desc="Every project tailored to business goals and target audience with transparent communication."/>
+            <Feature title="🛒 E-Commerce Expertise"
+            desc="Specialized in building high-converting online stores with secure payments, inventory management, and sales optimization for Pune businesses."/>
+            <Feature title="💰 Sales-Focused Design"
+            desc="Our e-commerce websites are built to maximize conversions, reduce cart abandonment, and increase average order value consistently."/>
+            <Feature title="🔧 Complete E-Commerce Solutions"
+            desc="From store setup to payment integration to marketing - everything you need to scale your online retail business."/>
             </motion.div>
           </div>
         </section>
@@ -131,16 +130,16 @@ export default function Home() {
         <section className="bg-gray-50 py-16 px-6">
           <div className="max-w-7xl mx-auto text-center">
             <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-8">
-              Trusted by Leading Brands
+              Trusted by 120+ Online Stores Across Pune & India
             </h3>
             <motion.div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center"
               variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <ClientLogo name="TechCorp"/>
-              <ClientLogo name="Digital"/>
-              <ClientLogo name="EcoGreen"/>
-              <ClientLogo name="BrightFuture"/>
-              <ClientLogo name="Summit"/>
-              <ClientLogo name="Creative"/>
+              <ClientLogo name="Tech Solutions"/>
+              <ClientLogo name="Digital First"/>
+              <ClientLogo name="Eco Partners"/>
+              <ClientLogo name="Smart Future"/>
+              <ClientLogo name="Commerce Peak"/>
+              <ClientLogo name="Brand Labs"/>
             </motion.div>
           </div>
         </section>
@@ -151,38 +150,38 @@ export default function Home() {
 
             <motion.div className="text-center mb-14" initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-4">
-                Digital Marketing & Web Development Services
+                E-Commerce Website Development & Digital Marketing Services Pune
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Comprehensive solutions to boost your online presence and drive business growth
+                Complete e-commerce solutions for retailers looking to build or scale their online store
               </p>
             </motion.div>
 
             <motion.div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
 
-              <ServiceCard title="💻 Responsive Website Design"
-                url="https://bizondigital.com/services/web-development"
-                desc="Modern, fast and SEO-optimized websites built to convert visitors into customers."/>
-
-              <ServiceCard title="🔍 Search Engine Optimization"
-                url="https://bizondigital.com/services/seo"
-                desc="Improve visibility with technical SEO, on-page optimization and content strategy."/>
-
-              <ServiceCard title="💰 Paid Advertising (PPC)"
-                url="https://bizondigital.com/services/paid-ads"
-                desc="Data-driven PPC campaigns that maximize ROI and increase brand reach."/>
-
-              <ServiceCard title="📱 Social Media Marketing"
-                url="https://bizondigital.com/services/social-media"
-                desc="Engaging campaigns on all platforms to grow audience and boost brand awareness."/>
-
-              <ServiceCard title="🛒 E-Commerce Solutions"
+              <ServiceCard title="�️ E-Commerce Store Development"
                 url="https://bizondigital.com/services/ecommerce"
-                desc="Complete online store setup with payment integration and conversion optimization."/>
+                desc="Custom online store development with secure payments, inventory management, and mobile-optimized checkout for Pune retailers."/>
 
-              <ServiceCard title="📊 Analytics & Reporting"
-                url="https://bizondigital.com/services"
-                desc="Detailed performance tracking and insights to guide strategic decisions."/>
+              <ServiceCard title="💳 Payment Gateway Integration"
+                url="https://bizondigital.com/services/ecommerce"
+                desc="Seamless integration of PayPal, Stripe, Razorpay, and local payment options. Secure, fast, and reliable transactions."/>
+
+              <ServiceCard title="📊 Sales Analytics & Optimization"
+                url="https://bizondigital.com/services/ecommerce"
+                desc="Real-time sales tracking, customer behavior analysis, and conversion rate optimization to maximize revenue."/>
+
+              <ServiceCard title="🔍 E-Commerce SEO"
+                url="https://bizondigital.com/services/seo"
+                desc="Product page optimization, schema markup, and strategies to rank your products higher in search results."/>
+
+              <ServiceCard title="📱 Mobile Store Optimization"
+                url="https://bizondigital.com/services/web-development"
+                desc="Fully responsive e-commerce design ensuring perfect shopping experience on phones and tablets."/>
+
+              <ServiceCard title="🚀 E-Commerce Marketing"
+                url="https://bizondigital.com/services/social-media"
+                desc="Email marketing, social commerce, and campaigns designed to increase sales and customer lifetime value."/>
 
             </motion.div>
 
@@ -201,36 +200,35 @@ export default function Home() {
 
             <motion.div initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-6">
-                Trusted Business Website Designers Pune
+                About BizOn Digital - E-Commerce Website Development Experts Pune
               </h2>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                BizOn Digital combines creativity, technology and marketing expertise to help brands
-                grow online. From responsive website design Pune to advanced digital campaigns,
-                our goal is to deliver long-term growth.
+                We are e-commerce website development specialists in Pune dedicated to helping online retailers scale their business.
+                Since 2017, we've helped 120+ brands like yours increase sales through custom store development, payment integration, and conversion optimization.
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                We focus on measurable performance, analytics-driven decisions and scalable strategies
-                that align with your business vision. Every project is treated as a partnership where your success is our success.
+                Our team combines technical expertise in e-commerce development with deep understanding of online sales optimization,
+                ensuring every store we build is not just stunning, but also generates real revenue for your business.
               </p>
 
               <div className="flex gap-4 mt-8">
                 <a href="https://bizondigital.com/contact"
                   className="inline-block bg-[#F97316] text-white px-8 py-3 rounded-full font-bold hover:bg-orange-700 hover:shadow-lg transition">
-                  📞 Get Free Consultation
+                  📞 Free Consultation
                 </a>
                 <a href="https://bizondigital.com/about"
                   className="inline-block border-2 border-[#F97316] text-[#F97316] px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition">
-                  Learn More About Us
+                  Learn More
                 </a>
               </div>
             </motion.div>
 
             <motion.div className="grid grid-cols-2 gap-6" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <Stat number="120+" label="Projects Delivered"/>
-              <Stat number="⭐ 4.9" label="Client Reviews"/>
-              <Stat number="8+" label="Years Experience"/>
+              <Stat number="120+" label="Happy Clients"/>
+              <Stat number="⭐ 4.9" label="Average Rating"/>
+              <Stat number="8+" label="Years in Business"/>
               <Stat number="98%" label="Success Rate"/>
             </motion.div>
           </div>
@@ -241,20 +239,20 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <motion.div className="text-center mb-16" initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-4">
-                Our Step-By-Step Growth Process
+                How We Build E-Commerce Stores - Development Process
               </h2>
               <p className="text-gray-600">
-                Proven methodology to transform your digital presence and achieve measurable results
+                Our proven 6-step process ensures your store is built for sales, conversions, and scaling
               </p>
             </motion.div>
 
             <motion.div className="grid md:grid-cols-3 gap-8" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <Process num="01" title="Consultation" desc="We understand your goals, challenges and target audience."/>
-              <Process num="02" title="Research & Planning" desc="Market analysis and strategic roadmap creation."/>
-              <Process num="03" title="Design & Development" desc="High-performance responsive websites and campaigns."/>
-              <Process num="04" title="Marketing Launch" desc="SEO optimization and advertising campaigns go live."/>
-              <Process num="05" title="Analytics & Optimization" desc="Continuous monitoring and performance improvement."/>
-              <Process num="06" title="Growth Scaling" desc="Expand successful strategies for long-term success."/>
+              <Process num="01" title="Discovery" desc="Understand your products, target customers, and competitive landscape."/>
+              <Process num="02" title="Strategy" desc="Build e-commerce roadmap with payment, inventory, and marketing strategy."/>
+              <Process num="03" title="Store Development" desc="Develop secure, fast, mobile-optimized e-commerce store with integrations."/>
+              <Process num="04" title="Payment & Integrations" desc="Set up payment gateways, inventory management, and shipping solutions."/>
+              <Process num="05" title="Launch" desc="Deploy your store, configure analytics, and set up email marketing."/>
+              <Process num="06" title="Growth & Optimization" desc="Monitor sales, optimize conversions, and scale through data-driven improvements."/>
             </motion.div>
           </div>
         </section>
@@ -264,11 +262,11 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <motion.div className="text-center mb-16" initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-4">
-                What Our Clients Say
+                Success Stories from Our E-Commerce Clients
               </h2>
 
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Real stories from real clients who experienced growth with our services
+                Discover how online retailers in Pune and across India have scaled their sales with our e-commerce development expertise.
               </p>
             </motion.div>
 
@@ -291,13 +289,13 @@ export default function Home() {
                 Meet Our Leadership Team
               </h2>
               <p className="text-gray-600">
-                Experienced professionals dedicated to your digital success
+                Expert professionals dedicated to your digital success
               </p>
             </motion.div>
 
             <motion.div className="grid md:grid-cols-2 gap-12" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <TeamMember name="Rahul Wanchoo" title="Entrepreneur | Internet Marketing Expert" desc="Extraordinary expertise in digital marketing strategies driving millions in revenue growth."/>
-              <TeamMember name="Suresh Khorate" title="Visual Communication Expert" desc="Leading innovator in visual design and brand communication excellence."/>
+              <TeamMember name="Rahul Wanchoo" title="Founder & E-Commerce Strategist" desc="E-commerce specialist with proven expertise in scaling online stores. Passionate about helping brands maximize sales through optimized store design and data-driven strategies."/>
+              <TeamMember name="Suresh Khorate" title="Lead Developer & UX Designer" desc="Expert in building high-performance e-commerce stores that convert. Specializes in payment integration, mobile optimization, and creating exceptional shopping experiences."/>
             </motion.div>
           </div>
         </section>
@@ -307,31 +305,31 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <motion.div className="text-center mb-12" initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl font-extrabold mb-4">
-                Frequently Asked Questions
+                E-Commerce Website Development Questions
               </h2>
               <p className="text-gray-600">
-                Get answers to common questions about our services
+                Common questions about our e-commerce store development and online sales optimization services
               </p>
             </motion.div>
 
             <motion.div className="space-y-4" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{once: true}}>
-              <FAQItem q="Do you offer responsive website design Pune?"
-                a="Yes, we specialize in mobile-first responsive website design Pune ensuring fast performance across all devices with SEO optimization built-in."/>
+              <FAQItem q="What payment gateways do you integrate?"
+                a="We integrate Razorpay, Stripe, PayPal, and other local payment options. All integrations are secure, PCI-compliant, and optimized for maximum conversion rates."/>
 
-              <FAQItem q="Are you experienced business website designers Pune?"
-                a="Our team has 8+ years of experience building high-conversion websites tailored for modern businesses in Pune and across India."/>
+              <FAQItem q="How can you help increase my online sales?"
+                a="Through optimized product pages, conversion rate optimization, strategic SEO, mobile store optimization, and email marketing automation tailored for e-commerce."/>
 
-              <FAQItem q="Do you provide SEO with web development?"
-                a="Absolutely! Every website we design follows SEO best practices including technical SEO, on-page optimization, and content strategy."/>
+              <FAQItem q="Can you help with cart abandonment issues?"
+                a="Absolutely! We implement abandoned cart recovery strategies, one-click checkout, guest purchasing options, and re-engagement campaigns to recover lost sales."/>
 
-              <FAQItem q="How long does it take to see SEO results?"
-                a="Most clients see initial results within 4-8 weeks, with significant improvements visible at 3-6 months depending on competition and strategy."/>
+              <FAQItem q="What is your e-commerce SEO expertise?"
+                a="We specialize in product page optimization, schema markup, keyword research for products, inventory-focused SEO strategies, and competitive analysis to rank your products higher."/>
 
-              <FAQItem q="Do you offer custom pricing packages?"
-                a="Yes! We provide customized packages tailored to your budget and specific business goals. Contact us for a free consultation."/>
+              <FAQItem q="How quickly can I start selling online?"
+                a="Most stores launch in 4-6 weeks. We handle everything from store setup, payment integration, to product uploading and marketing campaign setup."/>
 
-              <FAQItem q="Can I cancel my service contract anytime?"
-                a="We believe in building long-term partnerships. Our contracts are flexible and designed to provide transparency with no hidden clauses."/>
+              <FAQItem q="Do you provide post-launch support?"
+                a="Yes! We offer ongoing support including sales optimization, store updates, security monitoring, and performance analytics to maximize your revenue continuously."/>
             </motion.div>
           </div>
         </section>
@@ -341,36 +339,37 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-                Ready To Grow Your Brand Online?
+                Ready To Launch Your E-Commerce Store?
               </h2>
 
               <p className="text-xl opacity-95 mb-10">
-                Schedule your free 30-minute digital marketing consultation. Get a customized growth strategy, competitive analysis, and actionable recommendations.
+                Schedule your FREE 30-minute consultation with our e-commerce specialists in Pune. 
+                Get a customized store strategy, competitor analysis, and sales optimization recommendations.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/917030323838?text=Hello!%20I'm%20interested%20in%20your%20digital%20marketing%20services."
+                <a href="https://wa.me/917030323838?text=Hello!%20I%27m%20interested%20in%20responsive%20website%20design%20and%20digital%20marketing%20services%20in%20Pune."
                    className="bg-white text-[#F97316] px-10 py-4 rounded-full font-bold hover:shadow-xl transition transform hover:-translate-y-1 text-center">
-                   💬 Chat on WhatsApp
+                   💬 Message on WhatsApp
                 </a>
-                <a href="https://bizondigital.com/contact"
+                <a href="tel:+917030323838"
                   className="bg-gray-900 text-white px-10 py-4 rounded-full font-bold hover:bg-gray-800 transition transform hover:-translate-y-1 text-center">
-                   📧 Get Free Consultation
+                  📞 Call: +91 7030323838
                 </a>
               </div>
 
               <div className="mt-10 pt-10 border-t border-white/20 flex flex-col sm:flex-row justify-center gap-8 text-sm">
                 <div>
-                  <p className="font-bold text-lg">📞 +91 7030323838</p>
-                  <p className="opacity-90">Call us today</p>
+                  <p className="font-bold text-lg">🏢 Based in Pune</p>
+                  <p className="opacity-90">Serving businesses across India</p>
                 </div>
                 <div>
                   <p className="font-bold text-lg">⭐ 4.9/5 Rating</p>
-                  <p className="opacity-90">From 120+ clients</p>
+                  <p className="opacity-90">From 120+ happy clients</p>
                 </div>
                 <div>
-                  <p className="font-bold text-lg">🏆 8+ Years</p>
-                  <p className="opacity-90">Industry experience</p>
+                  <p className="font-bold text-lg">🚀 8+ Years</p>
+                  <p className="opacity-90">Proven track record</p>
                 </div>
               </div>
             </motion.div>
@@ -382,14 +381,14 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" variants={fadeUp} viewport={{once: true}}>
               <h3 className="text-2xl font-extrabold mb-6">
-                💡 Have an Awesome Project Idea?
+                💡 Have a Project Idea?
               </h3>
 
               <p className="text-gray-300 mb-8">
-                Let's discuss how BizOn Digital can help accelerate your business growth
+                Let's discuss how BizOn Digital can transform your online presence and accelerate your business growth
               </p>
 
-              <a href="https://wa.me/917030323838?text=Hello!%20I%27m%20interested%20in%20discussing%20my%20project."
+              <a href="https://bizondigital.com/contact"
                 className="inline-block bg-[#F97316] text-white px-8 py-3 rounded-full font-bold hover:bg-orange-700 transition">
                 Start Your Free Consultation
               </a>
@@ -403,18 +402,27 @@ export default function Home() {
             <div className="grid md:grid-cols-4 gap-12 mb-12">
               {/* Brand */}
               <div>
-                <h3 className="font-black text-2xl text-[#F97316] mb-6">BizOn Digital</h3>
-                <p className="text-gray-400">Leading digital marketing agency transforming businesses through data-driven strategies and innovative solutions.</p>
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#F97316] to-[#2563EB] rounded-lg flex items-center justify-center font-bold text-white text-lg">
+                    B
+                  </div>
+                  <div>
+                    <h3 className="font-black text-sm text-[#F97316] leading-tight">BIZON</h3>
+                    <h4 className="font-bold text-xs text-[#2563EB] leading-tight">DIGITAL</h4>
+                  </div>
+                </div>
+                <p className="text-gray-400">E-commerce website development in Pune. We build high-converting online stores with secure payments, inventory management, and strategies that drive sales growth.</p>
               </div>
 
-              {/* Company */}
+              {/* Quick Links */}
               <div>
-                <h4 className="font-bold text-lg mb-4 text-white">Company</h4>
+                <h4 className="font-bold text-lg mb-4 text-white">Quick Links</h4>
                 <ul className="space-y-3">
-                  <li><a href="https://bizondigital.com/" className="text-gray-400 hover:text-[#F97316] transition">Home</a></li>
+                  <li><a href="/#home" className="text-gray-400 hover:text-[#F97316] transition">Home</a></li>
+                  <li><a href="https://bizondigital.com/services" className="text-gray-400 hover:text-[#F97316] transition">Services</a></li>
                   <li><a href="https://bizondigital.com/about" className="text-gray-400 hover:text-[#F97316] transition">About Us</a></li>
-                  <li><a href="https://bizondigital.com/contact" className="text-gray-400 hover:text-[#F97316] transition">Contact Us</a></li>
                   <li><a href="https://bizondigital.com/blog" className="text-gray-400 hover:text-[#F97316] transition">Blog</a></li>
+                  <li><a href="https://bizondigital.com/contact" className="text-gray-400 hover:text-[#F97316] transition">Contact</a></li>
                 </ul>
               </div>
 
@@ -425,6 +433,7 @@ export default function Home() {
                   <li><a href="https://bizondigital.com/services/seo" className="text-gray-400 hover:text-[#F97316] transition">SEO</a></li>
                   <li><a href="https://bizondigital.com/services/paid-ads" className="text-gray-400 hover:text-[#F97316] transition">Paid Ads</a></li>
                   <li><a href="https://bizondigital.com/services/social-media" className="text-gray-400 hover:text-[#F97316] transition">Social Media</a></li>
+                  <li><a href="https://bizondigital.com/services/branding" className="text-gray-400 hover:text-[#F97316] transition">Branding</a></li>
                   <li><a href="https://bizondigital.com/services/web-development" className="text-gray-400 hover:text-[#F97316] transition">Web Development</a></li>
                   <li><a href="https://bizondigital.com/services/ecommerce" className="text-gray-400 hover:text-[#F97316] transition">E-Commerce</a></li>
                 </ul>
@@ -435,9 +444,11 @@ export default function Home() {
                 <h4 className="font-bold text-lg mb-4 text-white">Support</h4>
                 <ul className="space-y-3">
                   <li><a href="https://bizondigital.com/faq" className="text-gray-400 hover:text-[#F97316] transition">FAQ</a></li>
+                  <li><a href="https://bizondigital.com/contact" className="text-gray-400 hover:text-[#F97316] transition">Contact Us</a></li>
                   <li><a href="https://bizondigital.com/terms" className="text-gray-400 hover:text-[#F97316] transition">Terms & Conditions</a></li>
                   <li><a href="https://bizondigital.com/privacy" className="text-gray-400 hover:text-[#F97316] transition">Privacy Policy</a></li>
                   <li><a href="https://bizondigital.com/refund" className="text-gray-400 hover:text-[#F97316] transition">Refund Policy</a></li>
+                  <li><a href="https://bizondigital.com/help" className="text-gray-400 hover:text-[#F97316] transition">Help Desk</a></li>
                 </ul>
               </div>
             </div>
@@ -447,24 +458,26 @@ export default function Home() {
               <div className="grid md:grid-cols-3 gap-8 items-center">
                 {/* Contact Info */}
                 <div>
-                  <p className="text-gray-400 mb-2">📞 Phone</p>
-                  <a href="tel:+917030323838" className="text-[#F97316] font-bold hover:underline">+91 7030323838</a>
+                  <p className="text-gray-400 mb-2">📞 Contact Us</p>
+                  <a href="tel:+917030323838" className="text-[#F97316] font-bold hover:underline text-lg">+91 7030323838</a>
+                  <p className="text-gray-400 text-sm mt-1">Business Hours: 10 AM - 6 PM</p>
                 </div>
 
                 {/* Social Media */}
                 <div className="text-center">
-                  <p className="text-gray-400 mb-3">Follow Us</p>
+                  <p className="text-gray-400 mb-3">Follow Us On Social Media</p>
                   <div className="flex gap-4 justify-center">
-                    <a href="https://facebook.com/bizondigital" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition">f</a>
-                    <a href="https://twitter.com/bizondigital" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition">𝕏</a>
-                    <a href="https://linkedin.com/company/bizondigital" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition">in</a>
-                    <a href="https://instagram.com/bizondigital" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition">📷</a>
+                    <a href="https://facebook.com" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition" rel="noopener noreferrer">f</a>
+                    <a href="https://twitter.com" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition" rel="noopener noreferrer">𝕏</a>
+                    <a href="https://linkedin.com" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition" rel="noopener noreferrer">in</a>
+                    <a href="https://instagram.com" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#F97316] transition" rel="noopener noreferrer">📷</a>
                   </div>
                 </div>
 
                 {/* Copyright */}
                 <div className="text-right text-gray-400 text-sm">
                   <p>© 2025 BizOn Digital</p>
+                  <p>E-Commerce Website Development Pune</p>
                   <p>All rights reserved</p>
                 </div>
               </div>
@@ -473,7 +486,6 @@ export default function Home() {
         </footer>
 
       </main>
-    </>
   );
 }
 
@@ -528,34 +540,34 @@ function ClientLogo({name}){
 
 const testimonialData = [
   {
-    company: "TechCorp Solutions",
-    name: "John Anderson",
+    company: "Online Fashion Boutique",
+    name: "Priya Sharma",
     stars: 5,
-    text: "Outstanding digital marketing services! They transformed our online presence and significantly increased our customer engagement. Highly professional team with excellent results."
+    text: "BizOn Digital built our e-commerce store and within 3 months, our online sales tripled! Their payment integration and SEO optimization made a huge difference. Best investment for our business!"
   },
   {
-    company: "Green Earth Industries",
-    name: "Sarah Mitchell",
+    company: "Artisan Coffee Co",
+    name: "Rohan Patel",
     stars: 5,
-    text: "The SEO strategies implemented by this team brought remarkable results. Our website traffic doubled within three months. Truly exceptional work and great support!"
+    text: "Our conversion rate jumped from 1.2% to 4.8% after they optimized our store. Their e-commerce expertise is unmatched. The mobile store experience is flawless!"
   },
   {
-    company: "Digital Innovations Ltd",
-    name: "Michael Chen",
+    company: "Electronics Retail Store",
+    name: "Neha Desai",
     stars: 5,
-    text: "Professional and results-driven approach to social media marketing. They understood our brand perfectly and delivered exactly what we needed. Highly recommended!"
+    text: "Incredible work on our online store! The payment gateway integration is smooth, inventory management works perfectly, and our monthly revenue increased by 250% in 6 months!"
   },
   {
-    company: "Bright Future Co",
-    name: "Emily Rodriguez",
+    company: "Organic Beauty Products",
+    name: "Aisha Khan",
     stars: 5,
-    text: "Excellent content marketing strategies! Our engagement rates have never been better. The team is creative, responsive, and highly skilled. Great partnership!"
+    text: "From zero to ₹5 lakhs monthly sales in 9 months. Their e-commerce marketing strategies and conversion optimization are outstanding. Highly professional team!"
   },
   {
-    company: "Summit Technologies",
-    name: "David Thompson",
+    company: "Home Decor Exports",
+    name: "Vikram Singh",
     stars: 5,
-    text: "Their PPC campaigns delivered incredible ROI. Very impressed with their data-driven approach and constant optimization. Highly recommend their services!"
+    text: "Fantastic e-commerce development! They integrated Razorpay seamlessly, optimized our product pages for search, and our online sales are now our primary revenue stream. Exceptional!"
   }
 ];
 
